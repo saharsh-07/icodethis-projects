@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: yellow;
+}
+
+.cards {
+  border-radius: 30px;
+  background-color: darkblue;
+  color: whitesmoke;
+  line-height: 1.2rem;
+  font-weight: 700;
+}
+
+.cards:nth-child(1) {
+  box-shadow: 1px 140px 100px -49px black;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  aspect-ratio: 15 / 8;
+  gap: 1.5rem;
+  position: absolute;
+  top: 20%;
+  padding-left: 16px;
+  left: 20%;
+}
+
+img {
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+img:nth-child(1) {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+img:nth-child(2) {
+  position: relative;
+  left: -6px
+}
+
+img:nth-child(3) {
+  position: relative;
+  left: -8px
+}
+
+img:nth-child(4) {
+  position: relative;
+  left: -10px
+}
+
+img:nth-child(5) {
+  position: relative;
+  left: -15px
+}
+
+img:nth-child(6) {
+  position: relative;
+  left: -20px
+}
+
+.cards:nth-child(2) {
+  width: 18rem;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  display: flex;
+  gap: 1.5rem;
+  padding: 30px 10px 10px 20px;
+  flex-direction: column;
+  box-shadow: 1px 140px 100px -90px black;
+  flex-wrap: nowrap;
+  aspect-ratio: 2 / 2;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.cards:nth-child(3) {
+  width: 25rem;
+  aspect-ratio: 16 / 6;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 1px 150px 120px -50px black;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.bar-1 {
+  width: 40%;
+  border-radius: inherit;
+  background-color: yellow;
+}
+
+.bar-2 {
+  width: 60%;
+  background-color: lightskyblue;
+  border-radius: inherit;
+}
+
+.bar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 100/ 2;
+  background-color: grey;
+  border-radius: 10px;
+  border-collapse: separate;
+}
+
+.languages {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.yellow-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.yellow-dot>p {
+  position: relative;
+  top: -3px;
+  padding-left: 1.5rem;
+}
+
+.orange-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightskyblue;
+}
+
+.orange-dot>p {
+  padding-left: 1.5rem;
+  top: -3px;
+  position: relative;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  font-style: italic;
+  font-weight: 700;
+  color: salmon;
+  width: 100%;
+  overflow-y: hidden;
+  height: 1rem;
+  background-color: aliceblue;
+}
