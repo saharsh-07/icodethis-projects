@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum Components</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="notification">
+      <div class="checkmark"><p>&#10003;</p></div>
+      <div class="info">
+        <p>
+          Solved by <span class="user">Charlie-reid</span> in
+          <span class="user">post #2</span>
+        </p>
+        <p>
+          The answer was identified. All redirects created can be found under
+          the hosting tab of the project settings.
+        </p>
+      </div>
+    </section>
+    <main class="card">
+      <h3>Create a new Topic</h3>
+      <form action="#" method="get">
+        <input type="text" placeholder="Type title, or paste a link here" />
+        <div class="dropdown">
+          <select id="category">
+            <option value="Category">Category</option>
+          </select>
+          <select id="Tags">
+            <option value="Tags">Tags</option>
+          </select>
+        </div>
+        <textarea
+          name="post"
+          id="post"
+          cols="30"
+          rows="10"
+          placeholder="Enter your description here"
+        ></textarea>
+        <div class="button">
+          <input type="button" value="+ Create Topic" />
+          <input type="button" value="Cancel" />
+        </div>
+      </form>
+    </main>
+    <section class="filter">
+      <div class="category">
+        <select name="categories" id="categories">
+          <option value="All Categories" selected>
+            All Categories
+          </option></select
+        ><select name="tags" id="tags">
+          <option value="All Tags">All Tags</option>
+        </select>
+        <button class="latest">Latest</button>
+      </div>
+      <div class="options">
+        <p class="blue">Community Resources</p>
+        <p class="purple">Design Help</p>
+        <p class="orange">Publishing Help</p>
+      </div>
+      <article class="result">
+        <div class="one">
+          <div class="text">
+            <strong>Navbar Dropdown on Mobile</strong>
+            <p class="orange-1">Publishing Help</p>
+          </div>
+          <div class="images">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKqwjJWITnjNzrr6xvZNmo87F2JqWEXheB6NoSSLLHEUKnlYVv4EbER4WOiDLiB2z7Wc&usqp=CAU"
+              alt="img-1"
+            /><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4O1ajdhJ1RNvY6jkmmWk-FW4nqs_1rJs_87LmvSdUyWGOVRSAU-iE0kVRAgT4O7jmNw&usqp=CAU"
+              alt="img-2"
+            /><img
+              src="https://cdn-icons-png.flaticon.com/512/174/174275.png"
+              alt="img-3"
+            />
+          </div>
+        </div>
+        <div class="two">
+          <div class="text">
+            <strong>Persistent Dark Mode</strong>
+            <p class="purple-1">Design Help</p>
+          </div>
+          <div class="images">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz9830rVIvL8QbWa0XSH8WFOxWbh23o7jB6CFhWUiAEJnh-bDe7YxzxADqi6dyIL1YDII&usqp=CAU"
+              alt="img-4"
+            /><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uCMeVfj70xCXntcR0beKOrFiqIrTBb7ckaq3NbgfJOzznYwRsLeaFlkkZDYsJAt1nG0&usqp=CAU"
+              alt="img-5"
+            />
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>dated 17-10-2023</footer>
+  </body>
+</html>
