@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invite Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h3>Invite People</h3>
+      <p>
+        All invited people will be granted access to all sites within your
+        organization.
+      </p>
+      <div class="invite">
+        <p>Invite with email</p>
+        <p>Invite with link</p>
+      </div>
+      <div class="link">
+        <label for="link">Add to Team</label>
+        <div class="link-share">
+          <input type="text" id="link" placeholder="link here" />
+          <input type="button" value="Copy Link" />
+        </div>
+      </div>
+      <p>
+        People with organization email will be able tojoin with a link.
+        <a href="#">Deactivate</a> it if you don't need this.
+      </p>
+    </section>
+    <section>
+      <h3>Invite to Team</h3>
+      <form action="#" id="form">
+        <div class="left">
+          <label for="form">Team member</label>
+          <input
+            type="email"
+            name="email-1"
+            id="email-1"
+            placeholder="Email Address"
+          /><input
+            placeholder="Email Address"
+            type="email"
+            name="email-2"
+            id="email-2"
+          />
+          <a href="#">+ Add more</a>
+          <button type="submit">Send invites</button>
+        </div>
+        <div class="right">
+          <label for="permission">Permisssion</label>
+          <div class="dd">
+            <input type="text" placeholder="Read Only" id="permission" />
+          </div>
+          <div class="d">
+            <span> Read Only</span>
+            <span>Read & Edit</span>
+            <span>Admin</span>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="three">
+      <h3>Invite to Board</h3>
+      <input type="email" name="email-3" id="email-3" value="email@address.com"/>
+      <p>Invite with Link</p>
+      <p>Anyone with a link can view yourboard. <a href="#"> Create Link</a></p>
+      <button type="button">Send Invitation</button>
+    </section>
+  </body>
+</html>

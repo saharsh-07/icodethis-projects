@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  background-color: rgba(236, 236, 236, 0.829);
+  position: relative;
+}
+
+body::before {
+  display: inline-block;
+  content: "";
+  position: fixed;
+  width: 35rem;
+  height: 35rem;
+  filter: blur(70px);
+  border-radius: 50%;
+  top: 1rem;
+  left: 1rem;
+  background: radial-gradient(#c850ff,#8b71fd85,#d693b7, #6026ff);
+}
+
+body::after {
+  display: inline-block;
+  content: "";
+  position: fixed;
+  width: 25rem;
+  height: 25rem;
+  filter: blur(50px);
+  border-radius: 70%;
+  bottom: -6rem;
+  right: 20rem;
+  transform: rotate(-50deg);
+  background: radial-gradient(#ffacacbd, #f06ede);
+}
+
+section {
+  z-index: 1;
+  box-shadow: 1px 1px 30px -25px rgba(0, 0, 0, 0.6);
+  background-color: rgb(255 255 255 / 49%);
+  backdrop-filter: blur(0.1px);
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 10px;
+}
+
+section:nth-child(1) {
+  position: relative;
+  width: 45rem;
+  top: 5rem;
+  left: 30rem;
+}
+
+section:nth-child(1) {
+  padding: 4rem;
+}
+
+.invite {
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  margin: 1rem 1rem 1rem 0.1rem;
+  border-radius: 40px;
+  background-color: rgb(200 213 228 / 92%);
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.invite>p {
+  padding: 0.5rem 1rem 0.4rem 1.5rem;
+  margin: 0.3rem;
+}
+
+.invite>p:last-child {
+  background-color: white;
+  border-radius: 14px;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#link {
+  background-color: rgba(255, 255, 250, 0.9);
+}
+
+.link-share {
+  display: flex;
+  border-radius: 5px;
+  background-color: white;
+  border: 0.3px solid #d9cdcd33;
+  justify-content: space-between;
+}
+
+.link-share>input {
+  width: 100%;
+  border-radius: 5px;
+  border: transparent;
+  padding: 1rem;
+  margin: 1px 1px 1px 0;
+}
+
+input[type="button"] {
+  color: white;
+  width: 10%;
+  text-align: center;
+  background-color: rgb(175, 90, 255);
+  border-radius: 6px;
+  margin: 5px;
+  padding: 0.4rem 5rem 0.4rem 2rem;
+}
+
+a {
+  color: black;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+.link~p {
+  font-size: 0.7rem;
+}
+
+section:nth-child(2) {
+  position: relative;
+  width: 40rem;
+  padding-bottom: 1.5rem;
+  top: 3rem;
+  left: 10rem;
+}
+
+form {
+  display: flex;
+  gap: 2rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.left>input {
+  padding: 1rem 3rem;
+  box-shadow: 17px 4px 16px -20px grey;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.left>a {
+  margin: 1rem;
+  color: rgb(227, 87, 255);
+}
+
+button {
+  background-color: rgb(168, 63, 255);
+  border-radius: 5px;
+  width: 10rem;
+  color: white;
+  border: 2px solid rgba(205, 145, 255, 0.6);
+  padding: 1rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#permission {
+  position: relative;
+  box-shadow: 17px 4px 16px -20px grey;
+  border: 2px solid transparent;
+  padding-left: 2rem;
+  padding-block: 1rem;
+}
+
+.dd::after {
+  content: "⟱";
+  position: absolute;
+  right: 120px;
+  top: 110px;
+}
+
+.d {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+  font-weight: 500;
+  text-shadow: 3px 3px 12px grey;
+  background-color: rgba(255, 255, 255, 0.863);
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 0.9rem;
+  box-shadow: inset 1px 1px 10px -2px rgb(224, 198, 253);
+}
+
+.d>span:nth-child(2) {
+  background-color: rgb(220, 181, 252);
+  padding: 1rem 0.2rem 1rem 5px;
+  border-radius: 6px;
+  margin-left: -3px;
+}
+
+section:nth-child(3) {
+  position: relative;
+  top: -22rem;
+  left: 65rem;
+  width: 18%;
+}
+
+.three>h3 {
+  margin: 1rem;
+}
+
+.three::before {
+  content: "X";
+  color: rgb(177, 177, 177);
+  width: 3rem;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  height: 3rem;
+  position: absolute;
+  display: flex;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 224, 224, 29%);
+}
+
+#email-3 {
+  padding: 1.2rem;
+  border-radius: 5px;
+  font-weight: 900;
+  border: 2px solid rgb(255, 242, 242);
+  box-shadow: 1px 1px 10px -10px #f0f0f0da;
+  margin-bottom: 1rem;
+}
+
+#email-3~p {
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+}
+
+#email-3~p~p {
+  font-size: 0.7rem;
+}
+
+#email-3~p>a {
+  color: rgb(165, 97, 185);
+}
+
+.three>button {
+  display: flex;
+  place-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
