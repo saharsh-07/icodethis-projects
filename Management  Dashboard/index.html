@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Management Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <header>
+          <h1>S</h1>
+          <ul class="navbar">
+            <li>&#9761; Dashboard</li>
+            <li>&#128448; Folders</li>
+            <li>&#9113; Projects</li>
+            <li>&#128203; Tasks</li>
+            <li>&#9881; Settings</li>
+          </ul>
+        </header>
+        <div class="user">
+          <img
+            src="data:image/png;base64,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"
+            alt="user-img"
+          />
+          <strong>Devin Lee</strong>
+          <div class="icon"></div>
+        </div>
+      </nav>
+      <section class="middle">
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="&#128269; Search"
+          />
+        </div>
+        <h5 >RECENT FOLDERS</h5 >
+        <div class="folders">
+          <div class="folder">
+            <p>&#128448;</p>
+            <p>Invoices</p>
+          </div>
+          <div class="folder">
+            <p>&#128448;</p>
+            <p>Customers</p>
+          </div>
+        </div>
+        <h5 >PROJECTS</h5 >
+        <div class="projects">
+          <div class="project">
+            <p>Sintex</p>
+            <div class="bar"></div>
+            <p>26/47</p>
+          </div>
+          <div class="project">
+            <p>Tetrion</p>
+            <div class="bar"></div>
+            <p>7/21</p>
+          </div>
+          <div class="project">
+            <p>Petron</p>
+            <div class="bar"></div>
+            <p>14/16</p>
+          </div>
+          <div class="project">
+            <p>+</p>
+            <p>Add more</p>
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <ul>
+          <li>&#9993;</li>
+          <li>&#128276;</li>
+          <li>
+            <p>17:30</p>
+            <p>18 August</p>
+          </li>
+        </ul>
+        <h5 >Your Tasks</h5 >
+        <div class="tasks">
+          <div class="task">
+            <input type="checkbox" name="check" id="checkbox-1" />
+            <div class="info">
+              <p>Better quality favicon</p>
+              <p>Design</p>
+            </div>
+          </div>
+          <div class="task">
+            <input type="checkbox" name="check" id="checkbox-2" />
+            <div class="info">
+              <p>Social accounts setup</p>
+              <p>Marketing</p>
+            </div>
+            <p>&#128340; 12:30</p>
+          </div>
+          <div class="task">
+            <input type="checkbox" checked name="check" id="checkbox-3" />
+            <div class="info">
+              <p>Upgrade plan usage</p>
+              <p>Development</p>
+            </div>
+            <p>&#128340; 14:30</p>
+          </div>
+          <div class="task">
+            <input type="checkbox" checked name="check" id="checkbox-4" />
+            <div class="info">
+              <p>Email templates</p>
+              <p>Design</p>
+            </div>
+            <p>&#128206; 6</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Dated 19-10-2023</footer>
+  </body>
+</html>

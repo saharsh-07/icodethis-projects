@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(192, 244, 248);
+  display: grid;
+  place-content: center;
+}
+
+main {
+  min-width: 70%;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: white;
+  min-height: 70%;
+  gap: 3rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  border-right: 2px solid grey;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  margin: 1rem;
+  padding-left: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navbar>li:first-child {
+  background-color: skyblue;
+  border-radius: 30px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px olive solid;
+}
+
+img {
+  width: 20%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon {
+  background-color: lightcyan;
+  width: 1vw;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.icon::after {
+  content: ">";
+  display: flex;
+  place-content: center;
+  text-align: center;
+}
+
+
+
+.middle {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.folders{
+  margin-bottom: 4rem;
+}
+.projects{
+  margin-bottom: 3rem;
+}
+.search {
+  width: 70%;
+  height: auto;
+  border-radius: 30px;
+}
+
+#search {
+  box-shadow: 1px 1px 10px 1px rgb(211, 236, 211);
+  border-radius: inherit;
+  width: 100%;
+  border: transparent;
+}
+
+.folders {
+  display: flex;
+  gap: 1rem;
+}
+
+.folder {
+  width: 40%;
+  display: flex;
+  margin: 1rem;
+  place-content: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+.folder>p:first-child {
+  font-size: 3rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project {
+  padding: 2rem;
+  width: 110%;
+  background-color: lightskyblue;
+}
+
+.project:last-child {
+  background-color: whitesmoke;
+}
+
+.right {
+padding: 3rem;
+}
+
+.info>p:last-child{
+  background-color: aquamarine;
+  width: max-content;
+  padding: 5px;
+  border-radius: 20px;
+}
+.right>ul {
+  display: flex;
+  justify-content: end;
+}
+
+.right>ul>li {
+  padding-left: 1rem;
+}
+
+.right>ul>li:last-child {
+  padding-left: 2rem;
+}
+
+.tasks {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  margin: 0.3rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(219, 208, 230);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+  background-color: blue;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: white;
+  display: flex;
+  place-content: center;
+  font-size: 1.1rem;
+}
+
+.info~p{
+  margin-top: 2rem;
+}
