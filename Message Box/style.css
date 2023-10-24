@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  background-color: white;
+}
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  box-shadow: 1px 1px 1px 1px red;
+  display: flex;
+  flex-direction: column;
+}
+form>*{
+  margin: 1rem;
+}
+input[type="file"]{
+}
+h1{
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  background-color: rgb(253, 135, 91);
+}
+h1::after{
+  content: "-";
+  font-size: 3.5rem;
+  right: -5rem;
+  position: relative;
+}
+#file::before{
+  position: relative;
+  width: 86%;
+  height: 100%;
+  content: "Upload File";
+
+  padding: 1rem;
+  display: inline-block;
+  border: 1px dotted green;
+}
