@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(196, 191, 241);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+}
+
+section {
+  background: url("./pattern.svg");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px -3px #7b7b7b;
+  padding:2rem 1rem;
+  display: flex;
+  width: 20vw;
+  min-width: 1fr;
+  max-width: 1fr;
+  place-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 4rem;
+  place-self: center;
+  height: 4rem;
+}
+
+section>div:first-child {
+  display: grid;
+  margin-top: 2rem;
+  align-items: end;
+  justify-content: space-around;
+  margin-bottom: -1rem;
+  text-align:center;
+}
+
+h2 {
+  place-self: center;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: darkgreen;
+  width: 60%;
+  margin: 1.2rem;
+}
+section>div:nth-child(2){
+  padding: 2rem;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+ul{
+  color: rgba(197, 197, 197, 0.932);
+  text-align: start;
+  display: flex;
+  gap: 0.6rem;
+  place-self: center;
+}
+p{
+  margin: 1rem;
+  width: 100%;
+  line-height: 1.1rem;
+  font-size: 0.8rem;
+  word-spacing: 2px;
+}
+.active{
+  color: darkblue;
+}
+section>div:last-child{
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+}
+button{
+  margin: 0.5rem;
+  padding:0.6rem 1.2rem;
+  border-radius: 20px;
+  border: transparent;
+}
+button:first-child{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.795);
+  background-color: rgb(231, 255, 231);
+}
+button:last-child{
+  font-weight: 500;
+  color: white;
+  background-color: rgb(77, 77, 250);
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(51, 47, 53);
+  color: rgba(240, 240, 240, 0.781);
+  font-weight: 900;
+  width: 100vw;
+  text-align: center;
+}
