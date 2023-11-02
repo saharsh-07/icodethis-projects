@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(206, 195, 195, 0.849);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  height: auto;
+  width: 25rem;
+  color: white;
+  background-color: rgb(54, 71, 78);
+  ;
+}
+
+main>section {
+  padding: 1.8rem;
+}
+
+img {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 90%;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.auth {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 0.5rem;
+  margin-bottom: -1rem;
+  font-size: 0.9rem;
+}
+
+.auth>p {
+  color: rgba(152, 177, 209, 0.801);
+}
+
+time {
+  background-color: rgb(41, 52, 67);
+  color: rgb(223, 220, 220);
+  padding: 0.2rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+section>p {
+  margin: 1rem;
+  margin-bottom: -0.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+section:last-child {
+  background-color: #515f6bb8;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+section:last-child>div {
+  display: flex;
+}
+
+section:last-child>div:first-child>i {
+  color: red;
+  font-size: 1.5rem;
+}
+
+section:last-child>div {
+  gap: 0.5rem;
+  margin: -1rem;
+  padding: 1rem;
+  text-wrap: nowrap;
+  padding-inline: 2.1rem;
+}
+
+section:last-child>div>p {
+  font-size: 0.8rem;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  color: chartreuse;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  word-spacing: 1rem;
+  background-color: rgb(20, 44, 78);
+}
